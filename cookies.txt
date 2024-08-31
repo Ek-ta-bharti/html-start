@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+billing.questdiagnostics.com	TRUE	/	FALSE	1999999999	JSESSIONID	wCmaKONIoqjZgkzmDsYQyOkakK6gd_4zAe0XrdjNomADTH7_Af-9!546345577!384800340
+.billing.questdiagnostics.com	TRUE	/	FALSE	1999999999	TS01328902	01aae08dafaa4853a37b40f88c27c40802f374062f25d1fbc43c97b1a433e8a2b27a7ec791ff210c9a435aeb5864c46c53074cacd8
+

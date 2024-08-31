@@ -1,0 +1,352 @@
+/* element styling for patient*/
+ul, ol { list-style: none; }
+textarea { overflow: auto; color: inherit; font: inherit; margin: 0; font-size: 14px; background: #f6f6f6; border: 1px solid #e6e6e6; border-radius: 5px; }
+h2 { font-size: 20px; line-height: 1.3; margin-bottom: 10px; }
+th { text-align: left; }
+td { vertical-align: top; }
+input.button-secondary, button.button-secondary,input[type="button"].button-secondary { background-color: #F2F2F2; color: #35792A; }
+input.button-secondary:hover, button.button-secondary:hover,input[type="button"].button-secondary:hover { background-color: #C6D52F; color: #034C1F; }
+
+
+/* common styles for all patient pages*/
+#pagewrapper { 	min-width: 975px; }
+#headerbar { border-bottom: 1px solid rgb(230,230,230); }
+#headerbar .inner {	height: 30px; width: 945px; margin: 16px auto 0px auto;	padding: 0 15px; }
+#breadcrumbs { font-weight: bold; }
+#bodycontent { width: 945px; margin: 15px auto; position: relative; }
+#trrow { font-size: 20px; line-height: 1.3; }
+#masthead { border-bottom: none !important; }
+#page-title { font-size: 40px; }
+#menu { list-style: none; width: 624px; height: 414px; background: url("../images/bg.billpay.options-menu.jpg") no-repeat; position: relative; }
+#maincontent { width: 590px; float: left; position: relative;  padding: 30px 50px; /*padding: 30px 0 50px; margin-left: 50px;*/ } 
+.boldtextred { color: #c35600; font-weight: bold;}
+.text-large { font-size: 16px; line-height: 1.625; }
+table.text-large p { margin: 4px 0; }
+.inrtClientErr, .clientError { background: url(../images/icon.bullet.red.gif) no-repeat left center; display: block; padding: 0 20px;  float: left; color: #c35600; width: auto;}
+div.box { font-size: 16px;  line-height: 1.625; min-height: 250px;  width: 590px;  }
+div.box input[type="radio"] { width: 24px; }
+div.box input[type="button"] { float: right; margin-top: -30px; }
+td.method { padding-bottom: 47px; font-size: 16px; line-height: 1.625;}
+td.method img { margin: 12px 0; }
+p.footnote { margin: 16px 30px 25px; }
+.message { background: #c6d52f; color: #034c1f; border-radius: 8px; font-weight: bold; text-align: left;  width: auto; padding: 12px;}
+.message span { background: url(../images/icon.success.gif) no-repeat; line-height: 30px; margin-left: 10px; padding: 8px 40px; }
+.message table.confirmMessage { background: url("../images/icon.success.gif") no-repeat scroll 0 0 transparent; line-height: 20px;  margin-left: 20px;  padding: 8px 20px; text-align: center; font-size: 16px; }
+div.message h1 { font-size: 16px; margin-left: 30px; font-weight: bold; color: rgb(3,76,31); }
+span.statusmsg { font-size: 1.1em; font-weight: bold; background-image: url(../images/rotation.gif); background-position: 0px 10px; background-repeat: no-repeat; padding: 20px 0px; padding-left: 45px; }
+font.boldtextlarge {  font-size: 1.1em; font-weight: bold; padding: 20px 0px; padding-left: 45px; }
+.disclaimer { padding-top: 5px; margin-top: 20px; font-size: 12px; }
+.disclaimer.tooltip { width: 250px; border: 1px solid #c6d52f; background-color: #c6d52f; color: #034c1f; position:absolute; padding:2px 5px; display:none; }
+#tInvoiceMsgId,#errorHead1, #errorHead2,#errorHead3 { display: none; }
+.fixedTableLayout {table-layout: fixed;}
+
+
+/* menu bar*/
+#sidebar { width: 21%; float: left; padding: 36px 0 50px; }
+div.section-nav ul { margin: 0; padding: 0; }
+div.section-nav li { font-size: 13px; line-height: 1.231; font-weight: bold; margin-bottom: 4px; border-radius: 5px; overflow: hidden; }
+div.section-nav li a { background: rgb(242,242,242) url(../images/icon.action.arrow.png) 100% 13px no-repeat; display: block; padding: 8px 32px 8px 10px; }
+div.section-nav li a:hover { color: rgb(3,76,31);	background-color: rgb(198,213,47); background-image: url(../images/icon.action.arrow.hvr.png); text-decoration: none;}
+div.section-nav li.closed .selected { background-color: rgb(3,76,31) !important; background-image: url(../images/icon.action.arrow.fff.png) !important; color: rgb(255,255,255) !important; }
+#joineBill, #ebill { font-size: 12px; padding-left: 30px !important; }
+#joineBillLi { margin-bottom: 0; }
+
+
+#payment-insurance div.trouble { font-size: 14px; line-height: 1.429; width:auto; margin: 48px 0 0 0; }
+#payment-insurance th { width: 160px; font-weight: bold; }
+#payment-insurance button.button { display: inline-block; border: 1px solid #c6d52f; border-radius: 5px; background: url(../images/icon.action.arrow.png) 100% no-repeat; padding-right: 25px; color: #35792a; position: relative; margin-top: 10px; }
+#payment-insurance button.button:hover { background: #c6d52f url(../images/icon.action.arrow.hvr.png) 100% no-repeat; color: #034c1f; }
+
+
+/* form layout */
+.form { position: relative; width: 590px; font-size: 16px; line-height: 1.625; padding-bottom: 40px; }
+.form h3 {	font-size: 14px; line-height: 1.286; font-weight: bold; }
+.form fieldset { border:none; clear: both; position: relative; }
+.form table{  font-size: 14px; line-height: 1.25; width: 100%;  }
+.form th { width: 281px; vertical-align: top; color: #333;  padding-bottom: 10px; }
+.form td { padding-bottom: 10px; }
+.form input[type="text"], .form input[type="password"] { width: 284px; padding-left: 10px; }
+.form select, div.form-fullwidth select { width: 284px;  }
+.form div.selector span, div.form-fullwidth div.selector span{ width: 247px;}
+.form div.month span, .form div.year span { width: 100px; }
+.form select.month, .form select.year { width: 100%; } 
+.form span.info { position: absolute; font-size: 12px; line-height: 1.5; color: #333; top: -5px; right: 0;  }
+.form a, p.footnote span.more a  { border-bottom: 1px dotted rgb(53,121,42); }
+.form a:hover, p.footnote span.more a:hover { border-bottom-color: transparent; text-decoration: none; background: rgb(198,213,47); color: rgb(3,76,31); }
+.form .trouble a { border: 0; }
+.form .trouble a:hover{ text-decoration: underline; background: none; color: rgb(53,121,42); }
+.form .patientMonth span { width: 75px !important; }
+.form .patientDay span { width: 40px !important; }
+.form select.patientMonth { margin-right: 6px; width: 110px; }
+.form select.patientDay { margin-right: 6px; width: 75px; }
+.form input.patientYear { width: 88px; }
+table.form { margin-bottom: 0; }
+
+/* two column form layout*/
+p.subhead { float: right; margin-top: -30px; font-size: 14px; }
+p.subhead strong { margin-left: 25px; }
+div.cols { background: url(../images/bg.dbdbdb.gif) 50% 0 repeat-y; position: relative; }
+div.col { float: left; width: 45%; }
+div.col-right { float: right; }
+div.col th { width: 135px; }
+div.col .dobmonth span { width: 73px; }
+div.col select.dobmonth { width: 110px; }
+div.col .dobday span { width: 30px; }
+div.col select.dobday {width: 65px;}
+div.col input.dobyear { width: 68px; }
+div.col .dobyeardd span { width: 63px; }
+div.col select.dobyeardd { width: 100px; }
+div.col .has-radio div, div.col .has-radio input { float: left; }
+div.col .has-radio label { float: left; width: 60px; }
+
+/* full width table styling */
+div.form-fullwidth { width: 100%; font-size: 16px; padding-bottom: 40px;}
+div.form-fullwidth table { border-bottom: 20px solid rgb(242,242,242); margin: 0; width: 100%; }
+div.form-fullwidth table.tablesorter th { padding-right: 5px; }
+div.form-fullwidth th { background: #f2f2f2; border: 0 solid rgb(221,221,221); border-width: 0 1px; }
+div.form-fullwidth td { background: rgb(250,250,250);border: 0 solid rgb(221,221,221); border-width: 0 1px; }
+div.form-fullwidth th, .form-fullwidth td { padding: 10px 25px; }
+div.form-fullwidth p.clientError { width: 100%; }
+div.form-full-width tr.even td { background: rgb(255,255,255); }
+
+/* patient informative screens styles*/
+#invoiceLayerSpan { position:absolute; visibility:visible; z-index:15; }
+#invoiceLayerSpan font { color:#000; }
+#invoiceLayerSpan img { border: 1px solid #63666a; }
+#tooltip {border: 1px solid #c6d52f; background-color: #c6d52f; color: #034c1f; position:absolute;	padding:2px 5px; display:none; z-index:150;}
+.patientError { display: block; padding: 0; float: left; width: auto; color: #c35600; }
+h2 + #container { height: 1000px; }
+div.faq, .ssn, div.faq h3 { font-size: 16px; line-height: 1.625; }
+/*div.faq h3.title { color: #c35600; }*/
+div.faq p{ margin: 9px 0; }
+div.faq td.faqTH  { padding: 8px 0 15px; }
+div.faq td.faqTDodd, div.faq td.faqTDeven { font-size: 13px; line-height: 1.385; border-top: 1px dotted #63666a; padding: 17px 0 15px; }
+div.faq td:first-child { width: 30%; }
+div.faq > ul { border-top: 1px solid rgb(230,230,230); padding: 0;}
+div.faq a.toggleall { float: right; }
+div.faq li.question h3 { color: #333; margin: 0; padding: 10px 70px 10px 18px; background: rgb(242,242,242); border: 1px solid rgb(230,230,230); border-top: 0; position: relative; cursor: pointer; }
+div.faq li.question h3:after { content: ''; display: block; background: url(../images/sprite.toggle.png) no-repeat; position: absolute; height: 27px; right: 10px; top: 11px; width: 27px; background-position: 0 0; }
+div.faq li.question h3:hover { background: rgb(198,213,47); color: rgb(3,76,31); }
+div.faq li.question h3:hover:after { background-position: 100% 0; }
+div.faq div.answer { display: none; font-size: 14px; line-height: 1.429; padding: 25px 20px; }
+div.faq li.open h3:after { background-position: 0 100%; }
+div.faq li.open h3:hover:after { background-position: 100% 100%; }
+
+/*button alignment*/
+div.button-wrap {  text-align: right; margin-right: 5px; }
+div.more-text { padding: 10px 17px 18px; }
+div.more-text div.button-wrap { text-align: center; }
+div.more-text div.button-wrap input { margin-right: 10px; width: 150px; }
+
+/* terms and conditions block */
+#TermsAndConditionsDiv, #use_patient-wrap { width: 680px; }
+#use_patient-wrap .print { float: right;}
+#pagewrapper { min-width: 500px; }
+#termsAndConditionsContent .orderlist{ list-style-type: decimal; list-style-image: none; list-style-position: outside; padding-left: 20px; }
+#termsAndConditionsContent .orderlist li h2{ font-size: 11pt; font-weight: bold; }
+#innerlist{ list-style:disc; list-style-position: inside; padding-bottom: 0px; }
+#termsAndConditionsContent { margin-left: 5%; margin-right: 5%; text-align: justify; }
+#termsAndConditionsContent h1 { font-size: 20px; text-align: initial; }
+div.scrollableDiv { background-color: rgb(242, 242, 242); overflow-y: scroll;	vertical-align: baseline; border: 1px solid #666666; height: 180px; padding: 0px; }
+
+/*form specific styles*/
+/*payment forms*/
+div.form-invoicepayment table.invoices { width: 788px;}
+div.form-invoicepayment table.invoices td, .form-invoicepayment .invoices th { width: 150px; padding: 0 10px 10px 0; }
+div.form-invoicepayment table.invoices td input[type="text"] { width: 137px;  }
+div.form-invoicepayment div.year { float: right; }
+div.form-invoicepayment a, div.form-invoicepayment p.notice { font-size: 12px; }
+div.form-paymentreview form { float:left; } 
+div.form-paymentreview table.invoices { border-top: 1px solid rgb(221,221,221); margin-bottom: 25px; }
+div.form-paymentreview table.invoices td, .form-paymentreview .invoices th { padding: 10px; border-bottom: 1px solid rgb(221,221,221); }
+div.form-paymentreview strong { color: #c35600; display: block; text-align: center; }
+div.form-paymentreview tr.total {  background: #f2f2f2; }
+div.form-paymentreview .message { text-align: center; }
+div.ccouterclass { position: relative; }
+div.ccinnerclass { position: absolute; top: 0px; right: 0px; }
+td.cpmMessage {	align: center; vertical-align: middle; }
+#cpm-message-alert { border: 2px solid #c35600; margin: 2px; list-style-type:none; }
+
+/* insurance update form*/
+div.form-insurancetransfer .form { width: 100%; }
+#InsuranceTransferConfirm_insurance {  width: 420px; min-height: 350px }
+span.errorClass.errorMessage {	color: #c35600; font-size: 14px; display: block; margin-left: -40px;}
+
+/* MPB */ 
+div.form-ebill table { width: auto !important; text-align: left; }
+div.form-ebill th { width: 135px; }
+div.form-ebill label { width: 135px; display: block;}
+#changeEmailSection { padding-left: 150px; }
+#ebillSubscribeConfirm .message, #eBillCancelConfirm .message, #subscribe .message, #subscribeConfirm  .message { text-align: center;}
+
+/* payment History table*/ 
+#paymentHistory th, #paymentHistory td { border: 1px solid #f2f2f2; padding: 5px 7px; }
+a#togglePaymentHistory { margin-left: 10px; }
+div.histContainer { display: none; max-height: 260px; overflow: auto; }
+.pmt-date, .pmt-status { width: 30%; text-align: center; }
+.pmt-amount, .loading td { width: 40%; text-align: center; }
+.pat-amt-owed { width: 5%; }
+
+/*contact us*/
+div.form-contactus textarea { width: 100%; }
+#invContainer { display: block; max-height: 230px; overflow: auto; }
+#idContactUsConfirmForm { width: 100% }
+
+/* overrides to get rid of inline styling*/
+div.form-myprofile span.info { top: -20px;}
+div.form-myprofile div.year { margin-left: 7px; }
+#InsuranceTransferConfirm_insuranceClaimZip { width: 96px; }
+#ProcessSinglePayment_paymentDetailsMap_4__zipCode, #ProcessSinglePayment_paymentDetailsMap_4__cvv2Code, #PatientContactUsConfirmExternal_zipCode { width: 48%; padding-left: 5px; }
+#info-helper { margin: 5px 0 0; line-height: 1; font-size: 12px; }
+#stackOrderTag { float: left; z-index: 1; } 
+input[type="text"].input-small { width: 135px; }
+div.PATchatwindow { overflow: hidden; float: left;}
+.blockUI { padding: 15px 0px !important; }
+#contactUsDetails, #DisplayHomeButton, #DisplayRetryButton,.loading-image { display: none; }
+div.pmt-info { font-size: 12px; }
+input#header-search-text { line-height: inherit; }
+
+/* end of form-specific styles*/
+
+/* ------BEGIN:MMA------------------------------------------------*/
+
+.d-note { color: #35792a; }
+#ssotoolbar { float: right; height: 30px; display: inline; }
+#billregnav { list-style: none; font-weight: bold; margin-bottom: 10px; width: 100%; position: relative; z-index: 5; margin-bottom: 12px; }
+#billregnav li { float: left; margin-right: 10px; position: relative; }
+#billregnav a { display: block; padding: 5px; text-decoration: none; background: url("../images/bg.button.gif") repeat-x scroll 0 100% #35792A; border: 0 none; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), -2px -2px 2px rgba(0, 0, 0, 0.25) inset;color: #fff; font-weight: bold;  padding: 8px 20px; }
+#billregnav a:hover{ color:#fff; background: #034C1F; }
+#billregnav li ul { padding-left: 0px; }
+#billregnav ul{ background:#fff; background:rgba(255,255,255,0); list-style:none; position:absolute; left:-9999px; width: 242px; }
+#billregnav ul li{ padding-top:1px; float:none; width: 242px; }
+#billregnav ul a{ white-space:nowrap; }
+#billregnav li:hover ul{ left:0;}
+#billregnav li:hover a{ background-color: #034C1F; background-position: 0 -20px; }
+#billregnav li:hover ul { z-index:500; width: 280px; }
+#billregnav li:hover ul li { background: url("../images/bg.nav-section.gif") repeat-x scroll 0 0 rgb(242,242,242); width: 280px;}
+#billregnav li:hover ul li a{ background: url("../images/bg.nav-section.gif") no-repeat scroll -242px 50% transparent; color: #35792A; border-bottom: 1px solid #DBDBDB; margin: 0;text-decoration:none; padding-right: 0px; box-shadow: none;}
+#billregnav li:hover ul li a:hover{ background: url("../images/bg.button.gif")  repeat-x scroll 0 242px #c6d52f; color: #034C1F;}
+#billregnav .abar { width: 110px; text-align: center; }
+.user-status { text-align: right; padding-right: 20px; }
+.ajax_progress_message { background: url("../images/circle_ball_rotation.gif") top left no-repeat; padding-left: 20px; padding-top: 2px; height: 17px; margin-bottom: 5px; } 
+.set_inline{ display:inline; } 
+.ssn_margin{ display:inline; margin-left:12px; border-bottom: 1px dotted rgb(53,121,42); color: #35792a; }
+.error_color{ color: #C35600; }
+.ssnupdate{ color:#35792A; }
+p.heading3 { color: #c35600; font-weight: bold;  } 
+.hidden {  position: absolute;  left: -9999px !important; top: -9999px !important; }
+/*----------------------------------------------------END:MMA----------*/
+
+/*............for print only ........................*/
+
+@media print {
+* { background: none !important; }
+.nav { display: none; }
+#header-global, #headerbar, #bodycontent { width: auto; padding: 0 !important; }
+#header-search, #tools, #sidebar { display: none; }
+#bodywrapper { margin: 0; }
+#maincontent { width: auto !important; float: none; }
+#footer-content { width: auto; padding-bottom: 0; display: none; }
+#footer-labs, #footer-social { display: none; } 
+#dialogSurveyForm{ display: none;  }
+#breadcrumbs { display: none; }
+#page-title { display: none; }
+.button { display: none; }
+.noPrint { visibility: hidden; display: none; }
+.doPrint { visibility: visible !important; display: block !important; }
+#billregnav { display:none; }
+.inner {display: none; }
+#tdBillPrintButton, #divBillPrintButton { display:none; }
+#idConfirmationTitle { margin-top:10px; }
+#idConfirmationBlurb { padding-left: 0px; }
+.billpay h3 { width: 100%; font-style: underline;}
+.billpay h2 { margin-top: -75px; }
+.faq .toggleall { display: none !important; }
+.faq .answer { display: block !important; }
+.user-status { display: none; }
+#aca-print-receipt-footer { display: block !important; }
+form#InsuranceTransfer { padding-bottom: 0px;}
+#insuranceDetails hr {margin : 0 !important;}
+#promotionText {display: none;}
+#corpfooterPlacement { visibility: hidden; display:none; }
+#corpheaderPlacement_container { visibility: hidden; display:none; }
+}
+/* MPB  css for hide functionality and spacing */
+div #mpb {
+	display: none;
+}
+#mpb-header div {
+	margin: -20px 0 20px 0;
+	padding-left: 20px;
+}
+
+div#aca-print-receipt-footer { 
+	display: none; clear: both; 
+}
+
+/* Payment Methods */
+#paymentMethods { display: none; }
+#paymentMethods > ul { background-color: #dfdfdf; margin: 0; padding: 0; padding-top: 5px; }
+#paymentMethods > ul li { display: inline-block; padding: 10px; }
+#paymentMethods .paymentMethod { color: rgb(99, 102, 106); margin: 0; margin-left: 2px; }
+#paymentMethods .paymentMethod.selected { background-color: #F1F1F1; }
+#paymentMethods .paymentMethodSection { display: none; background-color: #f1f1f1; padding: 10px; border: 1px solid #f1f1f1; border-top: 0; }
+#paymentMethods .paymentMethodSection img { vertical-align: bottom; }
+#paymentMethods .paymentMethodTitle { margin-top: 10px; font-weight: bold; }
+#paymentMethods .paymentMethodSection ul.cardIcons { list-style: none; margin: 0; padding: 0; }
+#paymentMethods .paymentMethodSection ul.cardIcons li { display: inline-block; margin: 2px 5px; padding: 0; }
+#paymentForm #paymentMethodError div.fielderrorrow { padding: 10px; margin-bottom: 10px; border: 1px solid #c35600; font-size: 1em; }
+#availableCards .disabled_icon, .otherPaymentMethod, #checkImage, #cardError { display: none; }
+#selectedCard { height: 27px; margin-left: 10px; }
+#checkImage img { height: 250px; margin-left: 5%; }
+#cardError { width: 350px; }
+
+/* Contact Us lab code help text styles */
+#lab-help-text-container { position: relative; }
+span a.no-hover-bg { font-size: 13px; }
+span a.no-hover-bg:hover { background: none; }
+#lab-help-text-container #popUpText { position: absolute; visibility: hidden; background: #707070; color: #fff; padding: 5px; font-size: 10px; }
+
+td.td-width{
+	width:10%	
+}
+
+span.emailTxt{
+	word-break: break-all
+}
+
+div.paypalLogo{
+	width:fit-content;
+	padding-right:5px;
+}
+
+span #ppAccount{
+	vertical-align:top;
+}
+
+div #paypal-button{
+	vertical-align: top; 
+	display: inline-block;
+	width: 35%;
+}
+
+ul.secContent {
+	background: transparent;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	display: table;
+}
+
+ul.secContent li {
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+ul.secContent li:first-child {
+	width: 58%;
+}
+
+div.spay{
+	margin: 0px;
+}

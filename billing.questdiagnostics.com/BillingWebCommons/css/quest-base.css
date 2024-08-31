@@ -1,0 +1,221 @@
+@import url("fonts.css");
+@import url("uniform.css");
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css - customized to minimize overrides */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{line-height:0}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* element styles */ 
+html { overflow-y: scroll; }
+input, select, button { vertical-align: middle; }
+textarea { overflow: auto; }
+div, span, td, th, p { font-family: inherit; color: inherit; }
+sup { bottom: 1ex; color: #c35600; }
+sub { top: 0.8ex; }
+select { color: inherit; margin: 0; }
+
+p, dd, address { margin-bottom: 1em; }
+hr { box-sizing: content-box; height: 0; border-top: 4px solid #ebebeb; margin: 15px 0; width: 100%;}
+
+/* #Rebranding: customize element styles for rebranding - start */
+body { font: 14px/1.25 Akkurat-Pro-Regular, arial, sans-serif; color: rgb(99,102,106); background: rgb(255,255,255); }
+input[type="button"]:disabled, textarea:disabled, select:disabled { color: rgb(192,192,192); }
+input[type="text"], 
+input[type="password"], select { background: #f6f6f6; border: 1px solid #e6e6e6; border-radius: 5px; height: 27px; padding: 1px 3px; box-sizing: border-box;  }
+input[type='text'], input[type='password'] { line-height: 27px; } /*line-height for IE for vertical alignment of text in input box*/
+select { border-radius: 5px 0 0 5px; }
+h1, h2, h3, h4, h5, h6 { font-family: Akkurat-Pro-Bold, arial, sans-serif; font-weight: normal; margin: 0; padding: 0; color: #35792a; }
+h3 { color: #c35600; margin: 10px 0; font-size: 1.1; line-height: 1.286; font-family: Akkurat-Pro-Bold, arial, sans-serif; } /* section head */
+a { text-decoration: none; color: rgb(53,121,42); cursor: pointer; }
+a:hover { text-decoration: underline; }
+
+/* button */
+input.button, button.button { font-family: Akkurat-Pro-Bold,arial,sans-serif; font-size: 13px; font-weight: normal; box-shadow: none; border: 0; line-height: 2.462; border-radius: 5px; padding: 0 14px; color: #FFFFFF; background-color: #35792A; display: inline-block; margin-left: 7px; width: auto;  }
+input.button.secondary, button.button.secondary { background-color: #E1E1E1; color: #35792A; }
+input.button[disabled], input.button.secondary[disabled], button.button[disabled], input.button[disabled]:hover, input.button.secondary[disabled]:hover, button.button[disabled]:hover { color: #d2d2d2; background-color: #F4F4F4; }
+input.button:hover, button.button:hover, input.button.active, button.button.active { background-color: #C6D52F; color: #034C1F; }
+
+/* #Rebranding: customize page header/footer and other global styles for rebranding */
+/* header, footer, logo and page-title - layout styles */
+#page { margin: 0px auto; padding: 10px 30px; }
+#header { padding: 10px 15px 0px; position: relative; z-index: 21; }
+#footer { clear: both; font-size: 0.9em; }
+#footer-content { padding: 20px 15px; border-top: 1px solid #D2D2D2; color: rgb(99, 102, 106); }
+
+#bodycontent { margin: 15px 0; padding: 0 15px; }
+#header-title { position: absolute; right: 10px; top: 10px; }
+#masthead { border-bottom: 2px dotted #4e8944; padding-bottom: 10px; position: relative; }
+#logo-qd { width: 175px; display: inline-block; }
+
+#page-title { font: 25px/1 Akkurat-Pro-Light, arial, sans-serif; line-height: 1; padding-bottom: 7px; }
+#page-title span { font-family: Akkurat-Pro-Bold, arial, sans-serif; }
+div.form div.required label.formlabel:after { content: "*"; color: rgb(195, 86, 0); }
+/* customize for rebranding -end */
+
+/* normalize overides */
+sup, sub, *:first-child+html sup, *:first-child+html sub { position: static; }
+div { margin: 0; padding: 0; }
+
+/* vendor specific styles */
+::-webkit-search-decoration { display: none; }
+::-webkit-input-placeholder { color: inherit; }
+
+/* more psuedo selector */
+input::-moz-placeholder { opacity: 1; }
+input:focus::-webkit-input-placeholder 
+input:focus::-moz-placeholder { color: transparent !important; }
+input:focus:-ms-input-placeholder { color: transparent !important; }
+textarea:focus::-webkit-input-placeholder { color: transparent !important; }
+textarea:focus::-moz-placeholder { color: transparent !important; }
+textarea:focus:-ms-input-placeholder { color: transparent !important; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+ul.bullet { margin: 0 0 15px; }
+ul.bullet li { margin-bottom: 0 0 9px; list-style: disc; }
+
+ul.nostyle { display: inline-block; margin: 0; padding: 0; list-style: none; }
+ul.nostyle li { margin-top: 5px; list-style: none; }
+ul.nostyle li:FIRST-CHILD { margin-top: 0; }
+
+/*clear fix hack*/
+.header:after, .footer:after, .article:after, .section:after, .nav:after, #bodycontent:after { content: "\0020";  display: block;  height: 0; clear: both; visibility: hidden; }
+
+/* common styles */
+.text-right, .right { text-align: right !important; }
+.text-center { text-align: center !important; }
+.float-right { float: right; }
+.clearfix { clear: both; }
+.margin-right5 { margin-right: 5px; }
+.hidden { display: none; }
+.boldtext { font-weight: bold !important; }
+.normaltext-important { font-weight: normal !important; }
+b, strong, [style*="bold"] { font-family: Akkurat-Pro-Bold, arial, sans-serif; font-weight: normal !important; }
+
+/* Layout CSS */
+div.form h1, div.form h2, div.form h3, div.form h4 { margin: 20px 0; }
+div.form h3.sectionhead { padding: 5px 0; margin: 0; }
+
+/* one column */
+div.form label.formlabel { width: 40%; vertical-align: top; display: inline-block; *display: inline;/* for IE7*/ *zoom:1;/* for IE7*/ font-weight: bold; }
+div.form h2.pageheadtitle { font-size: 1.2em; }
+div.form div.formrow { 	margin: 5px 0px; padding: 5px; }
+div.form div.formrow.crunched { margin: 2px; padding: 5px 0; }
+div.form div.formrow.formfieldonly { padding-left: 40%; }
+div.form div.buttonspane { 	margin: 25px 0; padding: 5px; text-align: center; }
+
+/* two column */
+div.form div.formrow.twocolumn div.column, div.form div.fielderrorrow.twocolumn div.column { width: 49.5%; display: inline-block; vertical-align: top; }
+div.form div.formrow.twocolumn.formfieldonly div.column,  div.form div.fielderrorrow.twocolumn.formfieldonly div.column { padding-left: 71%; }
+div.form div.formrow.twocolumn div.column.inputfix { padding-top: 5px; } /* use this to vertical align non-input column with an input column*/
+div.form div.formrow.twocolumn div.column label.formlabel { width: 71%; }
+div.form div.formrow.twocolumn input[type="text"], div.form div.formrow.twocolumn input[type="password"], div.form div.formrow.twocolumn select { width: 150px; }
+
+/* center form */
+div.form.center label.formlabel { width: 43%; text-align: right; margin-right: 10px; }
+div.form.center div.formrow.formfieldonly { padding-left: 43%; }
+div.form.center h2.pageheadtitle { text-align: center; }
+
+div.form div.formrow.oddrow { background-color: #f2f2f2; }
+
+span.sidenote { color: #333; font-size: 12px; font-weight: normal; }
+sup.required { color: #c35600; }
+
+.ui_message_wrapper .message { padding: 10px 0px; border: 1px solid #CD3513; margin-bottom: 10px; }
+.ui_message_wrapper .message ul { padding: 0px; padding-left: 10px; margin: 0px; }
+.ui_message_wrapper .message ul li { padding: 0; margin: 0; list-style: none; }
+.ui_message_wrapper .success { color: #279B2D; background-color: #ECFFD8;  border-color: #279B2D;}
+.ui_message_wrapper .error { color: #c35600; background-color: #FFF9F2; }
+
+.tipOuterBox { position: absolute; top: 10%; left: 50%; min-width: 100px; z-index: 10001; }
+.tipInnerBox { position: relative; }
+.tipInnerBox-left { margin-left: 10px; }
+.tipInnerBox-bottom { margin-bottom: 10px; }
+.tipBox { margin: 0; padding: 5px 20px; font-size: 0.9em; border: 1px solid #c2c2c2; background-color: #fff; border-radius: 5px; max-width: 320px; overflow: auto; }
+.tipBox.error { color: #c35600; }
+.tipBox.warning { color: #35792a; }
+.tipBoxPointer { position: absolute; }
+.tipBoxPointer-left { top: 15%; left: -9px; }
+.tipBoxPointer-bottom { left: 50%; bottom: -9px; }
+
+ul.nostyleul { list-style: none; margin: 10px; margin-left: 15px; padding: 0; }
+ul.nostyleul li { margin-top: 5px; } 
+ul.nostyleul li input { margin-right: 5px;}
+
+/* #Rebranding: customize for rebranding color changes for error field - start */
+/* error fields */
+div.form .errordiv { color: #c35600; background-color: #FFF9F2; border: 1px solid #c35600; padding: 10px; }
+div.form .errordiv.nohighlight { background: none; border:none; }
+div.form .errordiv h3 { color: #c35600; font-weight: bold; }
+div.form .errordiv button.button, div.form .errordiv input.button.secondary { color: rgb(99,102,106); }
+div.form .errordiv ul { list-style: none; margin: 10px 0; padding: 5px 0; }
+div.form .errordiv ul li { padding: 5px 0; }
+/*form field error*/
+div.form div.formrow.errorrow { margin-bottom: 0; padding-bottom: 2px; }
+div.form div.formrow.errorrow div.selector span { color: #c35600; } 
+div.form div.formrow.errorrow label.formlabel { color: #c35600; }
+div.form input.errorfield, div.form select.errorfield { color: #c35600; border: 1px solid #CD3513; box-shadow: inset 0 0 15px rgba(255,248,220,0.75); background-color: #FFF; }
+div.form input[disabled].errorfield, div.form select[disabled].errorfield { border: 1px solid #CD3513; box-shadow: inset 0 0 15px rgba(255,248,220,0.75); background-color: #FFF; }
+
+/*error row*/
+div.form div.fielderrorrow { padding-left: 40%; color: #c35600; }
+div.form div.fielderrorrow span.errorMessage { color: #c35600; }
+div.form div.fielderrorrow.twocolumn { padding: 0; } 
+div.form div.fielderrorrow.twocolumn div.column ul { margin-left: 50%; }
+div.form div.fielderrorrow ul { margin-top: 0; list-style: none; padding: 0; }
+div.form div.fielderrorrow ul li { padding: 0; margin: 0; }
+/*error row for center form*/
+div.form.center div.fielderrorrow { padding-left: 43%; }
+div.form.center div.fielderrorrow ul { margin-left: 15px; width: 250px; }
+/* customize for rebranding color changes for error field - start */
+
+/* simple table */
+table.datatable { font-size: 0.9em; border-collapse: collapse; width: 100%; margin: 20px auto; }
+table.datatable thead tr.caption { background-color: #c6d52f; color: black; }
+table.datatable thead tr.caption span { margin-left: 20px; }
+table.datatable thead tr, table.datatable tfoot tr { background-color: #35792a; color: white; }
+table.datatable th { font-weight: bold; }
+table.datatable th, table.datatable td { border: 1px solid #d2d2d2; padding: 7px 5px; vertical-align: top; text-align: left; margin: 0; }
+table.datatable thead, table.datatable tfoot { font-weight: bold; }
+table.datatable tr.even { background-color: #f9f9f9; }
+
+/* table sorter*/
+table.tablesorter th.tablesorter-header { background: #f2f2f2; border-width: 0 1px; background-image: url(../images/both_flat.png); background-repeat: no-repeat; cursor: pointer;}
+table.tablesorter th.tablesorter-headerSortUp { background-image: url(../images/asc_flat.png); }
+table.tablesorter th.tablesorter-headerSortDown { background-image: url(../images/desc_flat.png); }
+table.tablesorter th.tablesorter-noSort { background: #f2f2f2; border-width: 0 1px; }
+table.tablesorter .pagedisplay { background: #f2f2f2; width: 40px; border-width: 0 1px; text-align: center; vertical-align: top;}
+table.tablesorter img.prev { width: auto; margin-right: 10px;}
+table.tablesorter img.next { width: auto; margin-left: 10px;}
+table.tablesorter .pager { position: relative !important; }
+
+/* ........uniform overrides....... */
+div.selector, div.selector span { background-image: url(../images/uniform.billing.png); height: 30px; line-height: 30px; }
+div.selector, div.selector select { font-size: 14px; }
+div.selector, div.selector.focus, div.selector.hover, div.selector:hover, div.selector.focus:active, div.selector.focus.active, div.selector:hover:active, div.selector.active:hover { background-position: 0 -80px; }
+div.selector span, div.selector.focus span, div.selector.hover span, div.selector:hover span, div.selector.focus:active span, div.selector:hover:active span, div.selector.active:hover span, div.selector.focus.active span { background-position: 100% 0; color: #333; }
+div.selector.disabled { background-position: 0 -120px; }
+div.selector.disabled:hover span { color: #bbb; }
+div.selector.disabled span { background-position: 100% -40px; }
+div.checker, div.radio { height: auto; width: auto; }
+div.checker span, div.radio span { background: none; height: auto; width: auto; }
+div.checker input, div.radio input { opacity: 1.0 !important; filter: alpha(opacity=100) !important; height: auto; width: auto; }
+/* ........uniform overrides....... - end*/
+
+.spay { margin: 10px 0; }
+.spay div.left { float:left; }
+.spay .swrap, .spay .nortonSeal { margin: 10px 10px 0;}
+.spay h2.slabel { line-height: 0; margin: 10px 0; }
+#spaysmall img { margin-left: 10px; height: 25px; vertical-align: bottom; } 
+
+div.processingmessage { position: fixed; top: 50%; left: 50%; margin-top: -45px; margin-left: -150px; font-size: 0.9em; font-family:arial,sans-serif; background-color: #e9e9e9; padding: 15px 10px; border: 1px solid #aaa; } 
+div.processingmessage img { height: 20px; margin-right: 10px; }
+div.processingmessage span { vertical-align:top; }
+
+.no-close .ui-dialog-titlebar-close { display: none; }
+
+#corpheaderPlacement_container { position: relative; width: 100%; padding-bottom: 9%; }
+#corpheaderPlacement { position: absolute; width: 100%; height: 100%; }
